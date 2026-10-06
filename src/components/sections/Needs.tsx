@@ -36,7 +36,7 @@ export default function Needs() {
   return (
     <section className="bg-slate-50 px-6 py-16 lg:py-24">
       <div className="mx-auto max-w-7xl">
-        {/* Encabezado */}
+       
         <div className="text-center">
           <span className="inline-block rounded-full bg-blue-600 px-4 py-1 text-xs font-bold uppercase tracking-wider text-white">
             Empieza aquí
@@ -49,7 +49,6 @@ export default function Needs() {
           </p>
         </div>
 
-        {/* Tarjetas */}
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {needs.map(({ icon: Icon, title, description, button, image, message, highlighted }) => (
             <article
@@ -58,7 +57,6 @@ export default function Needs() {
                 highlighted ? "ring-2 ring-blue-500 shadow-blue-500/30" : ""
               }`}
             >
-              {/* Imagen de fondo */}
               <Image
                 src={image}
                 alt=""
@@ -67,10 +65,9 @@ export default function Needs() {
                 className="object-cover opacity-70 transition duration-500 group-hover:scale-105"
               />
 
-              {/* Capa oscura para que se lea el texto */}
               <div className="absolute inset-0 bg-linear-to-t from-slate-950 via-slate-950/75 to-slate-950/10" />
 
-              {/* Contenido */}
+    
               <div className="relative">
                 <span className="flex h-12 w-12 items-center justify-center rounded-full bg-blue-600 shadow-lg shadow-blue-600/40">
                   <Icon className="h-6 w-6" />

@@ -15,7 +15,6 @@ const whatsappLink = getWhatsAppLink(
 export default function Hero() {
   return (
     <section className="relative flex flex-col overflow-hidden bg-slate-950 text-white lg:min-h-screen">
-      {/* Imagen: pantalla completa en celular, 60% derecho en desktop */}
       <div className="absolute inset-0 lg:left-auto lg:w-[60%]">
         <Image
           src="/images/hero.jpg"
@@ -26,17 +25,16 @@ export default function Hero() {
           className="object-cover object-center"
         />
 
-        {/* Celular: capa oscura encima de toda la imagen */}
+        
         <div className="absolute inset-0 bg-slate-950/75 lg:hidden" />
 
-        {/* Desktop: difumina el borde izquierdo de la imagen */}
+        {/*difumina el borde izquierdo de la imagen */}
         <div className="absolute inset-y-0 left-0 hidden w-1/2 bg-linear-to-r from-slate-950 to-transparent lg:block" />
       </div>
 
-      {/* Degradado abajo para unir con la siguiente sección */}
+      
       <div className="absolute inset-x-0 bottom-0 h-32 bg-linear-to-t from-slate-950 to-transparent" />
 
-      {/* Contenido: arriba en celular, centrado en desktop */}
       <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-1 items-center px-6 pb-14 pt-10 lg:py-16">
         <div className="max-w-xl">
           <span className="inline-block rounded-full border border-blue-500/40 bg-blue-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-blue-300">
