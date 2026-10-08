@@ -1,3 +1,4 @@
+import Forms from "@/components/sections/Forms";
 import Hero from "@/components/sections/Hero";
 import Needs from "@/components/sections/Needs";
 import Problems from "@/components/sections/Problems";
@@ -10,6 +11,7 @@ export default function Home() {
       <Problems />
       <Needs />
       <Process />
+      <Forms />
     </main>
   );
 }
