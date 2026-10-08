@@ -14,6 +14,7 @@ export default function Home() {
         <Problems />
         <Needs />
         <Process />
+        <Forms />
         <Final />
       </main>
       <Footer />
