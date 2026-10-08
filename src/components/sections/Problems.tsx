@@ -12,7 +12,6 @@ export default function Problems() {
   return (
     <section className="bg-white px-6 py-16 lg:py-24">
       <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-2 lg:gap-16">
-        {/* Columna izquierda: texto y checklist */}
         <div className="max-w-xl">
           <span className="inline-block rounded-full border border-blue-200 bg-blue-50 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-blue-700">
             ¿Te identificas?
@@ -37,7 +36,6 @@ export default function Problems() {
           </ul>
         </div>
 
-        {/* Columna derecha: imagen con tarjeta flotante */}
         <div className="relative mb-10 lg:mb-0">
           <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-2xl shadow-slate-900/20">
             <Image
@@ -49,7 +47,6 @@ export default function Problems() {
             />
           </div>
 
-          {/* Tarjeta flotante */}
           <div className="absolute -bottom-10 left-4 right-4 flex items-start gap-4 rounded-2xl border border-blue-500/30 bg-slate-900/90 p-5 text-white shadow-xl shadow-blue-500/20 backdrop-blur-md sm:left-auto sm:max-w-sm lg:-right-6">
             <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-blue-500/40 bg-blue-500/15">
               <Lightbulb className="h-6 w-6 text-blue-400" />
